@@ -69,7 +69,14 @@
                                                                         <div class="item-role" style="font-family:Montserrat-Light;">
                                                                             <p style="color:white;">General information about the Technology Student Association.</p>
                                                                         </div>
-
+                                                                        {% assign sorted-posts = site.posts | where: "category","About" %}
+                                                                        {% for post in sorted-posts %}
+                                                                        {% if post.tags[0] == "special" %}
+                                                                        <div class="item-role">
+                                                                            <a class="btn btn-white-outline" href="{{ post.permalink }}">{{ post.title }}</a>
+                                                                        </div>
+                                                                        {% endif %}
+                                                                        {% endfor %}
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -136,9 +143,14 @@
                                                                         <div class="item-role" style="font-family:Montserrat-Light">
                                                                             <p style="color:white;">Participating in STEM competitions is just one reason to be involved in TSA.</p>
                                                                         </div>
+                                                                        {% assign sorted-posts = site.posts | where: "category","Join" %}
+                                                                        {% for post in sorted-posts %}
+                                                                        {% if post.tags[0] == "special" %}
                                                                         <div class="item-role">
-                                                                            <a class="btn btn-white-outline" href="#">Why Join?</a>
+                                                                            <a class="btn btn-white-outline" href="{{ post.permalink }}">{{ post.title }}</a>
                                                                         </div>
+                                                                        {% endif %}
+                                                                        {% endfor %}
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -205,11 +217,14 @@
                                                                         <div class="item-role" style="font-family:'Montserrat-Light'">
                                                                             <p>Interested in competing? Get the information you need here.</p>
                                                                         </div>
-                                                                        <br />
+                                                                        {% assign sorted-posts = site.posts | where: "category","Competitions" %}
+                                                                        {% for post in sorted-posts %}
+                                                                        {% if post.tags[0] == "special" %}
                                                                         <div class="item-role">
-                                                                            <a href="#" class="btn btn-white-outline">Themes and Problems</a>
-                                                                            <br /><a href="#" class="btn btn-info-outline">Competition Updates</a>
+                                                                            <a class="btn btn-white-outline" href="{{ post.permalink }}">{{ post.title }}</a>
                                                                         </div>
+                                                                        {% endif %}
+                                                                        {% endfor %}
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -276,6 +291,14 @@
                                                                         <div class="item-role" style="font-family:'Montserrat-Light'">
                                                                             <p style="color:white;">Discover how TSA provides its members with world-class leadership opportunities.</p>
                                                                         </div>
+                                                                        {% assign sorted-posts = site.posts | where: "category","Leadership" %}
+                                                                        {% for post in sorted-posts %}
+                                                                        {% if post.tags[0] == "special" %}
+                                                                        <div class="item-role">
+                                                                            <a class="btn btn-white-outline" href="{{ post.permalink }}">{{ post.title }}</a>
+                                                                        </div>
+                                                                        {% endif %}
+                                                                        {% endfor %}
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -342,12 +365,14 @@
                                                                         <div class="item-role" style="font-family:'Montserrat-Light'">
                                                                             <p style="color:white;">Find out what's going on with TSA at the local, state, and national levels.</p>
                                                                         </div>
-                                                                        <br />
+                                                                        {% assign sorted-posts = site.posts | where: "category","Events" %}
+                                                                        {% for post in sorted-posts %}
+                                                                        {% if post.tags[0] == "special" %}
                                                                         <div class="item-role">
-                                                                            <a style="color:white;" class="btn btn-white-outline">
-                                                                                Calendar of Events
-                                                                            </a>
+                                                                            <a class="btn btn-white-outline" href="{{ post.permalink }}">{{ post.title }}</a>
                                                                         </div>
+                                                                        {% endif %}
+                                                                        {% endfor %}
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -414,12 +439,14 @@
                                                                         <div class="item-role" style="font-family:'Montserrat-Light'">
                                                                             <p style="color:white;">Find out what's going on with TSA at the local, state, and national levels.</p>
                                                                         </div>
-                                                                        <br />
+                                                                        {% assign sorted-posts = site.posts | where: "category","Students" %}
+                                                                        {% for post in sorted-posts %}
+                                                                        {% if post.tags[0] == "special" %}
                                                                         <div class="item-role">
-                                                                            <a style="color:white;" class="btn btn-white-outline">
-                                                                                Calendar of Events
-                                                                            </a>
+                                                                            <a class="btn btn-white-outline" href="{{ post.permalink }}">{{ post.title }}</a>
                                                                         </div>
+                                                                        {% endif %}
+                                                                        {% endfor %}
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -488,6 +515,14 @@
                                                                             <a style="display:inline-block; margin:0px !important;" href="#" class="col-md-5 btn btn-white-outline">Parents</a>
                                                                             <br /><br /><a style=" display:inline-block; margin:0px !important;" href="#" class="col-md-5 btn btn-white-outline">Alumni</a>
                                                                         </div>
+                                                                        {% assign sorted-posts = site.posts | where: "category","Adults" %}
+                                                                        {% for post in sorted-posts %}
+                                                                        {% if post.tags[0] == "special" %}
+                                                                        <div class="item-role">
+                                                                            <a class="btn btn-white-outline" href="{{ post.permalink }}">{{ post.title }}</a>
+                                                                        </div>
+                                                                        {% endif %}
+                                                                        {% endfor %}
                                                                         <br />
                                                                         <div class="item-role" style="align-content:flex-start; text-align:left">
                                                                             <p class="custom-text form-text custom-fonts-style display-7" style="color:white; font-family:'Montserrat-Black'">
@@ -514,7 +549,7 @@
                                                         </div>
                                                         <div class="footer3 section_3" id="footer3-7" style="height:inherit; width:100%; padding:1rem;">
                                                             <div class="content">
-                                                              {% assign sorted-posts = site.posts | where: "category","Adultss" %}
+                                                              {% assign sorted-posts = site.posts | where: "category","Adults" %}
                                                               {% for post in sorted-posts %}
                                                               {% unless post.tags[0] == "special" %}
                                                                 <div class="col-md-12 col-sm-12">
@@ -574,10 +609,14 @@
                                                                         <div class="item-role" style="font-family:'Montserrat-Light'; text-align:left; color:white;">
                                                                             Learn about the National Operations of TSA, Inc.
                                                                         </div>
-                                                                        <br />
-                                                                        <div style="flex-direction:row; text-align:left;">
-                                                                            <a style="display:inline-block; margin:0px !important;" href="#" class="col-md-12 btn btn-white-outline">Email Us</a>
+                                                                        {% assign sorted-posts = site.posts | where: "category","Directory" %}
+                                                                        {% for post in sorted-posts %}
+                                                                        {% if post.tags[0] == "special" %}
+                                                                        <div class="item-role">
+                                                                            <a class="btn btn-white-outline" href="{{ post.permalink }}">{{ post.title }}</a>
                                                                         </div>
+                                                                        {% endif %}
+                                                                        {% endfor %}
                                                                     </div>
                                                                 </div>
                                                             </div>
