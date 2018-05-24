@@ -7,7 +7,7 @@ title: "Home"
 <section class="carousel slide section_7" style="max-height:74vh; margin-top:5.75rem; margin-bottom:2rem;" data-interval="false" id="slider1-4">
     <div class="full-screen">
         <div class="custom-slider slide carousel" data-pause="true" data-keyboard="false" data-ride="carousel" data-interval="8000">
-            <ol class="carousel-indicators">
+            <ol class="carousel-ndicators">
               {% assign sorted-posts = site.posts | where: "tags","jumbotron" %}
               {% for post in sorted-posts %}
               {% if (forloop.first) %}
