@@ -1,0 +1,263 @@
+---
+layout: default
+category: "Main"
+title: "Home"
+---
+
+<section class="carousel slide section_7" style="max-height:74vh; margin-top:5.75rem; margin-bottom:2rem;" data-interval="false" id="slider1-4">
+    <div class="full-screen">
+        <div class="custom-slider slide carousel" data-pause="true" data-keyboard="false" data-ride="carousel" data-interval="8000">
+            <ol class="carousel-indicators">
+              {% assign sorted-posts = site.posts | where: "tags","jumbotron" %}
+              {% for post in sorted-posts %}
+              {% if (forloop.first) %}
+                <li data-app-prevent-settings="" data-target="#slider1-4" data-slide-to="{{ forloop.index0 }}" class="active"></li>
+                {% else %}
+                <li data-app-prevent-settings="" data-target="#slider1-4" data-slide-to="{{ forloop.index0 }}" class=""></li>
+                {% endif %}
+              {% endfor %}
+
+            </ol>
+            <div class="carousel-inner" role="listbox">
+
+              {% assign sorted-posts = site.posts | where: "tags","jumbotron" %}
+              {% for post in sorted-posts %}
+                {% if (forloop.first) %}
+                <div class="carousel-item slider-fullscreen-image active" data-bg-video-slide="false" style="min-height:74vh !important; background-image: url({{ post.reviewImgUrl | absolute_url }});">
+                {% else %}
+                <div class="carousel-item slider-fullscreen-image" data-bg-video-slide="false" style="min-height:74vh !important; background-image: url({{ post.reviewImgUrl | absolute_url }});">
+                {% endif %}
+                    <div class="container container-slide" style="min-height:74vh !important;">
+                      <div class="image_wrapper">
+                          <div class="col-sm-12 col-md-5" style="background: rgba(0, 0, 0, 0.8);bottom: 0;left: 0;opacity: 1;position: absolute;right: 0;top: 0;z-index: 1;">
+
+                              <div class="carousel-caption justify-content-left align-left" style="color: #fff; padding:10% 5% 10% 5%; height:100%">
+                                  <div class="align-left" style="max-height:80%;">
+                                      <h2 class="custom-fonts-style display-1" style="font-family:'Montserrat-Black';">{{ post.title }}</h2>
+                                      <p style="font-family:'Open Sans'" class="custom-text custom-fonts-style display-4">
+                                          {{ post.blurb}}
+                                      </p>
+                                      <div class="custom-section-btn" buttons="0">
+                                          <a class="btn  btn-primary display-4" href="{{ post.permalink | absolute_url }}" style="font-family:'Montserrat-ExtraBold';font-size:1.2rem;padding-top:2rem; padding-bottom:2rem; width:100%; margin-left:0px !important">LEARN MORE</a>
+
+                                      </div>
+
+                                      <!--SOCIAL ICONS AREA FOR SPECIAL FEATURES - TODO --><!--
+                                      <hr style="border:1px solid white;">
+                                      <div style="background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;padding-top: 0.25rem;padding-bottom: 2rem;position:relative;color:white;">
+                                          <div class="container">
+                                              <div class="media-container-row align-center custom-white">
+                                                  <div class="row social-row">
+                                                      <div style="flex-direction:row;padding-left: 0;margin-bottom: 0;list-style: none;display: flex;flex-wrap: wrap;justify-content: flex-end;" class="social-list align-right pb-2">
+
+                                                          <div class="soc-item" style="margin: 0 .5rem;">
+                                                              <a href="#" target="_blank">
+                                                                  <span class="custom-iconfont custom-iconfont-social customib-info" style=" color: rgb(255, 255, 255);"></span>
+                                                              </a>
+                                                          </div>
+
+                                                          <div class="soc-item" style="margin: 0 .5rem;">
+                                                              <a href="#" target="_blank">
+                                                                  <span class="custom-iconfont custom-iconfont-social socicon-twitter socicon" style="color: rgb(255, 255, 255);"></span>
+                                                              </a>
+                                                          </div>
+
+                                                          <div class="soc-item" style="margin: 0 .5rem;">
+                                                              <a href="#" target="_blank">
+                                                                  <span class="custom-iconfont custom-iconfont-social socicon-youtube socicon" style="color: rgb(255, 255, 255);"></span>
+                                                              </a>
+                                                          </div>
+
+                                                          <div class="soc-item" style="margin: 0 .5rem;">
+                                                              <a href="#" target="_blank">
+                                                                  <span class="custom-iconfont custom-iconfont-social socicon-facebook socicon" style="color: rgb(255, 255, 255);"></span>
+                                                              </a>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+-->
+
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+              {% endfor %}
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="features9 section_8" id="features9-n" style="padding:0px 0px 2rem 0px !important;">
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="card p-3 col-12 col-md-6 col-lg-4">
+                <div class="media-container-row">
+                    <div class="card-img pr-2">
+                        <span class="custom-iconfont customi-users" style="color: rgb(35, 35, 35);"></span>
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title py-3 custom-fonts-style display-7">
+                            JOIN
+                        </h4>
+                        <p class="custom-text custom-fonts-style display-4">
+                            TSA membership offers exciting opportunities for competition and leadership.
+                        </p>
+                        <br />
+                        <div class="form-group">
+                            <a style="padding:0.5rem 1rem 0.5rem 1rem; width:100%; margin-left:0px;" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card p-3 col-12 col-md-6 col-lg-4">
+                <div class="media-container-row">
+                    <div class="card-img pr-2">
+                        <span class="custom-iconfont customi-star" style="color: rgb(35, 35, 35);"></span>
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title py-3 custom-fonts-style display-7">COMPETE</h4>
+                        <p class="custom-text custom-fonts-style display-4">
+                            Compete in animatronics, dragster design, video gaming, flight challenge, and more.
+                        </p>
+                        <br />
+                        <div class="form-group">
+                            <a style="padding:0.5rem 1rem 0.5rem 1rem; width:100%; margin-left:0px;" class="btn btn-success">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card p-3 col-12 col-md-6 col-lg-4">
+                <div class="media-container-row">
+                    <div class="card-img pr-2">
+                        <span class="custom-iconfont customi-flag" style="color: rgb(0, 0, 0);"></span>
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title py-3 custom-fonts-style display-7">
+                            LEAD
+                        </h4>
+                        <p class="custom-text custom-fonts-style display-4">
+                            Learn a variety of leadership skills like critical thinking and problem solving.
+                        </p>
+                        <br />
+                        <div class="form-group">
+                            <a style="padding:0.5rem 1rem 0.5rem 1rem; width:100%; margin-left:0px;" class="btn btn-warning">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+<section class="popup-btn-cards section_9" style="padding-top:0px;">
+
+    <br />
+    <div class="container">
+        <h3 class="custom-section-subtitle display-5 align-center custom-fonts-style custom-light" style="text-align:left;">
+            Announcements and Updates
+
+        </h3>
+        <hr />
+    </div>
+    <div style="padding:0px" class="container grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 0 }'>
+
+{% for post in site.posts %}
+
+   {% if post.tags[0] == "featured" %}
+        <!--Object Template-->
+        <div class="col-md-4 grid-item" style="padding:1rem 1rem 2rem 1rem;">
+            <div class="col-md-12" style="padding:0px;">
+                <div class="card-wrapper  popup-btn">
+                    <div class="card-img">
+                        <div class="custom-overlay" style="background:rgba(19, 67, 142,0.9)"></div>
+                        <div class="custom-section-btn text-center">
+                            <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-white-outline display-4">
+
+                              {{ post.readMoreType }}
+
+                            </a>
+                        </div>
+                        <img src="{{ post.reviewImgUrl }}" alt="Sorry, image could not load.">
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title custom-fonts-style display-7">
+                            {{ post.title }}
+                        </h4>
+                        <p class="custom-text custom-fonts-style align-left display-7" style="font-family:'Montserrat-Light'">
+                            {{ post.excerpt }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+{% endfor %}
+
+
+    </div>
+
+</section>
+
+<section class="section_2" style="padding:1rem 0rem 1rem 0rem">
+
+
+    <div class="container mb-5" style="margin-top: 1rem !important; margin-bottom: 0.25rem !important;">
+        <div class="media-container-row">
+            <div class="col-12 align-center">
+
+                <h3 class="custom-section-subtitle custom-light custom-fonts-style display-5" style="color:white;">
+                    <strong>
+                        STEM Competitions and Programs
+                    </strong>
+                </h3>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="flex-direction:row;">
+        <div class="row">
+            <div class="col-6 col-md-2 col-sm-6 col-xs-6" style="padding:1rem; margin:0px; display:inline-block;">
+                <a href="#" style="width:inherit;">
+                    <img src="assets/images/tsahs-1106x1129.png" style="width:inherit;" alt="" title="" />
+                </a>
+            </div>
+            <div class="col-6 col-md-2 col-sm-6 col-xs-6" style="padding:1rem; margin:0px; display:inline-block;">
+                <a href="#" style="width:inherit;">
+                    <img src="assets/images/tsams-1106x1129.png" style="width:inherit;" alt="" title="" />
+                </a>
+            </div>
+            <div class="col-6 col-md-2 col-sm-6 col-xs-6" style="padding:1rem; margin:0px; display:inline-block;">
+                <a href="#" style="width:inherit;">
+                    <img src="assets/images/teams-308x301.png" style="width:inherit;" alt="" title="" />
+                </a>
+            </div>
+            <div class="col-6 col-md-2 col-sm-6 col-xs-6" style="padding:1rem; margin:0px; display:inline-block;">
+                <a href="#" style="width:inherit;">
+                    <img src="assets/images/vex-240x235.png" style="width:inherit;" alt="" title="" />
+                </a>
+            </div>
+            <div class="col-6 col-md-2 col-sm-6 col-xs-6" style="padding:1rem; margin:0px; display:inline-block;">
+                <a href="#" style="width:inherit;">
+                    <img src="assets/images/solarsprint-1106x1081.png" style="width:inherit;" alt="" title="">
+                </a>
+            </div>
+            <div class="col-6 col-md-2 col-sm-6 col-xs-6" style="padding:1rem; margin:0px; display:inline-block;">
+                <a href="#" style="width:inherit;">
+                    <img src="assets/images/unite-1106x1081.png" style="width:inherit;" alt="" title="">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,2275 @@
+{% include header.html %}
+
+<div id="navDefault">
+    <div id="mySidenav" class="sidenav">
+
+        <div id="content4-v">
+            <div style="position:absolute; right:0; margin-right:3rem; top:0; margin-top:2rem;">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span class="custom-iconfont customi-close"></span>   RETURN</a>
+            </div>
+            <hr />
+            <div class="container">
+                <div class="media-container-row">
+                    <div class="title col-12 col-md-8">
+                        <h2 class="align-center pb-3 custom-fonts-style display-2">
+                            Navigate the Site
+                        </h2>
+                        <h3 class="custom-section-subtitle align-center custom-light custom-fonts-style display-5">
+
+                            <a href="../../Home">Home</a><br /> <a href="index.html">Contact</a><br /> <a href="index.html">Privacy Policy</a>
+
+                        </h3>
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="toggle1 section_1" id="toggle1-u">
+
+
+
+
+            <div class="container-fluid" style="padding:0px !important">
+                <div class="media-container-row">
+                    <div class="col-12 col-md-12" style="padding:0px !important">
+                        <div class="section-head text-center space30">
+
+                        </div>
+                        <div class="clearfix"></div>
+                        <div id="bootstrap-toggle" class="toggle-panel accordionStyles tab-content">
+                            <div class="card">
+                                <div class="card-header" role="tab" id="headingOne">
+                                    <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-parent="#accordion" data-core="" href="#collapse1_12" aria-expanded="false" aria-controls="collapse1">
+                                        <h4 class="custom-fonts-style display-5">
+                                            <span class="sign custom-iconfont customi-arrow-down inactive"></span>About
+                                        </h4>
+                                    </a>
+                                </div>
+                                <div id="collapse1_12" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body p-4" style="padding:0px !important;">
+                                        <div class="panel-text" style="padding:0px;">
+
+                                            <div class="col-md-12 features11 section_2" id="features11-b" style="padding:0px !important;">
+
+
+                                                <div class="col-md-12" style="height:100%; padding:0px !important">
+                                                    <div style="height:inherit">
+                                                        <div class="custom-figure" style="padding-right:0px !important;">
+                                                            <div class="features16" id="features16-d">
+
+
+                                                                <div class="team-item col-lg-12 col-md-12">
+
+                                                                    <div class="item-caption py-3">
+                                                                        <div class="item-name px-2">
+                                                                            <p class="custom-fonts-style display-5" style="color:white;">
+                                                                                What is TSA?
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="item-role" style="font-family:Montserrat-Light;">
+                                                                            <p style="color:white;">General information about the Technology Student Association.</p>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="footer3 section_3" id="footer3-7" style="height:inherit; width:100%; padding:1rem;">
+                                                            <div class="content">
+                                                          {% for post in site.posts limit:4 %}
+                                                          {% if post.category[0] == "About" %}
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">{{ post.title }}</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">{{ post.blurb }}</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                              {% endif %}
+                                                            {% endfor %}
+                                                          </div>
+                                                          <div class="content">
+                                                        {% for post in site.posts limit:4 offset:4 %}
+                                                        {% if post.category[0] == "About" %}
+                                                              <div class="col-md-12 col-sm-12">
+                                                                  <div style="text-align:center">
+
+                                                                      <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">{{ post.title }}</span>
+                                                                      <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">{{ post.blurb }}</p>
+                                                                      <br />
+                                                                      <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                      <hr />
+                                                                  </div>
+                                                              </div>
+                                                            {% endif %}
+                                                          {% endfor %}
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab" id="headingTwo">
+                                    <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-parent="#accordion" data-core="" href="#collapse2_12" aria-expanded="false" aria-controls="collapse2">
+                                        <h4 class="custom-fonts-style display-5">
+                                            <span class="sign custom-iconfont customi-arrow-down inactive"></span>Join
+                                        </h4>
+                                    </a>
+
+                                </div>
+                                <div id="collapse2_12" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body p-4" style="padding:0px !important;">
+                                        <div class="panel-text" style="padding:0px;">
+
+                                            <div class="col-md-12 features11 section_2" id="features11-b" style="padding:0px !important;">
+
+
+                                                <div class="col-md-12" style="height:100%; padding:0px !important">
+                                                    <div style="height:inherit">
+                                                        <div class="custom-figure" style="padding-right:0px !important;">
+                                                            <div class="features16" id="features16-d">
+
+
+                                                                <div class="team-item col-lg-12 col-md-12">
+
+                                                                    <div class="item-caption py-3">
+                                                                        <div class="item-name px-2">
+                                                                            <p class="custom-fonts-style display-5" style="color:white;">
+                                                                                Join TSA
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="item-role" style="font-family:Montserrat-Light">
+                                                                            <p style="color:white;">Participating in STEM competitions is just one reason to be involved in TSA.</p>
+                                                                        </div>
+                                                                        <div class="item-role">
+                                                                            <a class="btn btn-white-outline" href="#">Why Join?</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="footer3 section_3" id="footer3-7" style="height:inherit; width:100%; padding:1rem;">
+                                                            <div class="content">
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">AFFILIATION AND DUES</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">Information on TSA's membership affiliation and the cost of dues.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">BEING AND ADVISOR</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">What you need to know about having a TSA chapter.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">ONLINE AFFILIATION INSTRUCTIONS</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">Are you a teacher ready to start a TSA chapter?.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <br />
+                                                            <div class="content">
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">MEMBER AFFILIATION POLICIES</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">Rules for affiliating and managing a chapter.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">TESTIMONIALS</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">Learn what is being said about TSA.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">TSA DRESS CODE</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">Know the official dress code policy for TSA’s competitions and other activities.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab" id="headingTwo">
+                                    <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-parent="#accordion" data-core="" href="#collapse3_12" aria-expanded="false" aria-controls="collapse2">
+                                        <h4 class="custom-fonts-style display-5">
+                                            <span class="sign custom-iconfont customi-arrow-down inactive"></span>Competitions
+                                        </h4>
+                                    </a>
+
+                                </div>
+                                <div id="collapse3_12" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body p-4" style="padding:0px !important;">
+                                        <div class="panel-text" style="padding:0px;">
+
+                                            <div class="col-md-12 features11 section_2" id="features11-b" style="padding:0px !important;">
+
+
+                                                <div class="col-md-12" style="height:100%; padding:0px !important">
+                                                    <div style="height:inherit">
+                                                        <div class="custom-figure" style="padding-right:0px !important;">
+                                                            <div class="features16" id="features16-d">
+
+
+                                                                <div class="team-item col-lg-12 col-md-12">
+
+                                                                    <div class="item-caption py-3">
+                                                                        <div class="item-name px-2">
+                                                                            <p class="custom-fonts-style display-5" style="color:white;">
+                                                                                Compete
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="item-role" style="font-family:'Montserrat-Light'">
+                                                                            <p>Interested in competing? Get the information you need here.</p>
+                                                                        </div>
+                                                                        <br />
+                                                                        <div class="item-role">
+                                                                            <a href="#" class="btn btn-white-outline">Themes and Problems</a>
+                                                                            <br /><a href="#" class="btn btn-info-outline">Competition Updates</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="footer3 section_3" id="footer3-7" style="height:inherit; width:100%; padding:1rem;">
+                                                            <div class="content">
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">COMPETITION FORMS</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">Forms and related documents for national TSA competitions.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">TSA HIGH SCHOOL COMPETITIONS</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">Overview of TSA's high school competitive events.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">TSA MIDDLE SCHOOL COMPETITIONS</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">Overview of TSA's middle school competitive events.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">TSA DRESS CODE</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">Know the official dress code policy for TSA’s competitions and other activities.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <br />
+                                                            <div class="content">
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">JUNIOR SOLAR SPRINT</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">Funded by the Army Educational Outreach Program (AEOP), JSS engages 5th - 8th grade youth in designing, building and racing model solar cars.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">TSA <em>TEAMS</em> COMPETITION</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">Tests of Engineering Aptitude, Mathematics and Science (TEAMS) is an annual competition for high school and middle school students. The theme for 2017 is “Engineering The Environment.”</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">PROJECT LEAD THE WAY (PLTW) PARTNERSHIP</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">TSA partners with PLTW to advance shared goals for success in science, technology, engineering and mathematics education.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">VEX ROBOTICS COMPETITION</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">A Signature Robotics Competition Using the VEX Robotics Design System.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab" id="headingTwo">
+                                    <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-parent="#accordion" data-core="" href="#collapse4_12" aria-expanded="false" aria-controls="collapse2">
+                                        <h4 class="custom-fonts-style display-5">
+                                            <span class="sign custom-iconfont customi-arrow-down inactive"></span>Leadership
+                                        </h4>
+                                    </a>
+
+                                </div>
+                                <div id="collapse4_12" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body p-4" style="padding:0px !important;">
+                                        <div class="panel-text" style="padding:0px;">
+
+                                            <div class="col-md-12 features11 section_2" id="features11-b" style="padding:0px !important;">
+
+
+                                                <div class="col-md-12" style="height:100%; padding:0px !important">
+                                                    <div style="height:inherit">
+                                                        <div class="custom-figure" style="padding-right:0px !important;">
+                                                            <div class="features16" id="features16-d">
+
+
+                                                                <div class="team-item col-lg-12 col-md-12">
+
+                                                                    <div class="item-caption py-3">
+                                                                        <div class="item-name px-2">
+                                                                            <p class="custom-fonts-style display-5" style="color:white;">
+                                                                                Leadership
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="item-role" style="font-family:'Montserrat-Light'">
+                                                                            <p style="color:white;">Discover how TSA provides its members with world-class leadership opportunities.</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="footer3 section_3" id="footer3-7" style="height:inherit; width:100%; padding:1rem;">
+                                                            <div class="content">
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">THE STUDENT LEADERSHIP CHALLENGE</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">See lesson plans and activities for teaching the Five Practices for Becoming an Exemplary Leader.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">NATIONAL TSA OFFICER HIGHLIGHTS</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">The national TSA officers lead TSA's members throughout the year.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">NATIONAL TSA OFFICER CANDIDATE PROGRAM</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">Interested in running for a national office? Here’s what's involved.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <br />
+                                                            <div class="content">
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">LEAP OVERVIEW</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">TSA's Leadership Program - Leadership, Education, Achievement and Personal Growth.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">LEAP LEGACY CHAPTER</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">Chapters showcase their Leadership activities for a chance for national recognition.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">LEAP COMPETITION ENGAGEMENT</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">Leadership is incorporated into each TSA competition.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab" id="headingTwo">
+                                    <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-parent="#accordion" data-core="" href="#collapse5_12" aria-expanded="false" aria-controls="collapse2">
+                                        <h4 class="custom-fonts-style display-5">
+                                            <span class="sign custom-iconfont customi-arrow-down inactive"></span>Events
+                                        </h4>
+                                    </a>
+
+                                </div>
+                                <div id="collapse5_12" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body p-4" style="padding:0px !important;">
+                                        <div class="panel-text" style="padding:0px;">
+
+                                            <div class="col-md-12 features11 section_2" id="features11-b" style="padding:0px !important;">
+
+
+                                                <div class="col-md-12" style="height:100%; padding:0px !important">
+                                                    <div style="height:inherit">
+                                                        <div class="custom-figure" style="padding-right:0px !important;">
+                                                            <div class="features16" id="features16-d">
+
+
+                                                                <div class="team-item col-lg-12 col-md-12">
+
+                                                                    <div class="item-caption py-3">
+                                                                        <div class="item-name px-2">
+                                                                            <p class="custom-fonts-style display-5" style="color:white;">
+                                                                                Events & Conferences
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="item-role" style="font-family:'Montserrat-Light'">
+                                                                            <p style="color:white;">Find out what's going on with TSA at the local, state, and national levels.</p>
+                                                                        </div>
+                                                                        <br />
+                                                                        <div class="item-role">
+                                                                            <a style="color:white;" class="btn btn-white-outline">
+                                                                                Calendar of Events
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="footer3 section_3" id="footer3-7" style="height:inherit; width:100%; padding:1rem;">
+                                                            <div class="content">
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">NATIONAL TSA CONFERENCE</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">TSA's annual main event. Location, accommodation and competition information.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">STATE CONFERENCES</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">State delegations hold regional and/or state conferences.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">TSA UNITE</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">Learn about a summer STEM program for high school students.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <br />
+                                                            <div class="content">
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">NATIONAL TSA WEEK</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">Showcase your TSA chapter to your school and community.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">CAREER AND TECHNICAL EDUCATION MONTH</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">Support the annual recognition of career and technical education.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">TSA ADVISOR APPRECIATION WEEK</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">Student members can show their gratitide to the chapter advisors who make TSA possible.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab" id="headingTwo">
+                                    <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-parent="#accordion" data-core="" href="#collapse6_12" aria-expanded="false" aria-controls="collapse2">
+                                        <h4 class="custom-fonts-style display-5">
+                                            <span class="sign custom-iconfont customi-arrow-down inactive"></span>Students
+                                        </h4>
+                                    </a>
+
+                                </div>
+                                <div id="collapse6_12" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body p-4" style="padding:0px !important;">
+                                        <div class="panel-text" style="padding:0px;">
+
+                                            <div class="col-md-12 features11 section_2" id="features11-b" style="padding:0px !important;">
+
+
+                                                <div class="col-md-12" style="height:100%; padding:0px !important">
+                                                    <div style="height:inherit">
+                                                        <div class="custom-figure" style="padding-right:0px !important;">
+                                                            <div class="features16" id="features16-d">
+
+
+                                                                <div class="team-item col-lg-12 col-md-12">
+
+                                                                    <div class="item-caption py-3">
+                                                                        <div class="item-name px-2">
+                                                                            <p class="custom-fonts-style display-5" style="color:white;">
+                                                                                For Students
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="item-role" style="font-family:'Montserrat-Light'">
+                                                                            <p style="color:white;">Find out what's going on with TSA at the local, state, and national levels.</p>
+                                                                        </div>
+                                                                        <br />
+                                                                        <div class="item-role">
+                                                                            <a style="color:white;" class="btn btn-white-outline">
+                                                                                Calendar of Events
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="footer3 section_3" id="footer3-7" style="height:inherit; width:100%; padding:1rem;">
+                                                            <div class="content">
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">NATIONAL TSA CONFERENCE</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">TSA's annual main event. Location, accommodation and competition information.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">STATE CONFERENCES</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">State delegations hold regional and/or state conferences.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">TSA UNITE</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">Learn about a summer STEM program for high school students.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <br />
+                                                            <div class="content">
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">NATIONAL TSA WEEK</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">Showcase your TSA chapter to your school and community.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">CAREER AND TECHNICAL EDUCATION MONTH</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">Support the annual recognition of career and technical education.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">TSA ADVISOR APPRECIATION WEEK</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">Student members can show their gratitide to the chapter advisors who make TSA possible.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab" id="headingTwo">
+                                    <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-parent="#accordion" data-core="" href="#collapse7_12" aria-expanded="false" aria-controls="collapse2">
+                                        <h4 class="custom-fonts-style display-5">
+                                            <span class="sign custom-iconfont customi-arrow-down inactive"></span>Adults
+                                        </h4>
+                                    </a>
+
+                                </div>
+                                <div id="collapse7_12" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body p-4" style="padding:0px !important;">
+                                        <div class="panel-text" style="padding:0px;">
+
+                                            <div class="col-md-12 features11 section_2" id="features11-b" style="padding:0px !important;">
+
+
+                                                <div class="col-md-12" style="height:100%; padding:0px !important">
+                                                    <div style="height:inherit">
+                                                        <div class="custom-figure" style="padding-right:0px !important;">
+                                                            <div class="features16" id="features16-d">
+
+
+                                                                <div class="team-item col-lg-12 col-md-12">
+
+                                                                    <div class="item-caption py-3">
+                                                                        <div class="item-name px-2">
+                                                                            <p class="custom-fonts-style display-5" style="color:white;">
+                                                                                For Adults
+                                                                            </p>
+                                                                        </div>
+                                                                        <br />
+                                                                        <div style="flex-direction:row; text-align:left;">
+                                                                            <a style="display:inline-block; margin:0px !important;" href="#" class="col-md-5 btn btn-white-outline">Parents</a>
+                                                                            <br /><br /><a style=" display:inline-block; margin:0px !important;" href="#" class="col-md-5 btn btn-white-outline">Alumni</a>
+                                                                        </div>
+                                                                        <br />
+                                                                        <div class="item-role" style="align-content:flex-start; text-align:left">
+                                                                            <p class="custom-text form-text custom-fonts-style display-7" style="color:white; font-family:'Montserrat-Black'">
+                                                                                Join our mailing list.
+                                                                            </p>
+                                                                            <small style="font-family:'Montserrat-Light'; text-align:left; color:white;">Sign up here to receive informational emails from national TSA.</small>
+                                                                            <div class="media-container-column" data-form-type="formoid">
+                                                                                <div data-form-alert="" hidden="" class="align-center">
+                                                                                    Thanks for filling out the form!
+                                                                                </div>
+
+                                                                                <form class="form-inline">
+                                                                                    <div class="form-group">
+                                                                                        <input type="email" class="form-control input-sm input-inverse my-2" name="email" required="" data-form-field="Email" placeholder="Email" id="email-footer3-7">
+                                                                                    </div>
+                                                                                    <button style="margin-left:0px;" href="" class="btn btn-primary" type="submit">Subscribe</button>
+                                                                                </form>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="footer3 section_3" id="footer3-7" style="height:inherit; width:100%; padding:1rem;">
+                                                            <div class="content">
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">TOOLKITS & RESOURCES</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">Information and materials that support TSA chapter activities.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">SCHOOL SCENE NEWSLETTER</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">TSA's official online newsletter. Published three times a year.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">NATIONAL  SERVICE PROJECT</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">TSA partners with the American Cancer Society. Get involved in this worthwhile cause.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">ACHIEVEMENT & RECOGNITION AWARDS</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">Individuals who contribute to the goals of TSA are recognized.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <br />
+                                                            <div class="content">
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">LEGISLATIVE TOOLS</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">Resources for communicating with legislators about TSA’s purpose.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">TRADEMARK POLICIES</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">Document that governs the use of the TSA name and emblem.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">VOLUNTEER OPPORTUNITIES</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">TSA offers a variety of volunteer opportunities for adults who are engaged in STEM careers and education.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">TSA DRESS CODE</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">Know the official dress code policy for TSA’s competitions and other activities.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab" id="headingTwo">
+                                    <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-parent="#accordion" data-core="" href="#collapse8_12" aria-expanded="false" aria-controls="collapse2">
+                                        <h4 class="custom-fonts-style display-5">
+                                            <span class="sign custom-iconfont customi-arrow-down inactive"></span>TSA Directory
+                                        </h4>
+                                    </a>
+
+                                </div>
+                                <div id="collapse8_12" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body p-4" style="padding:0px !important;">
+                                        <div class="panel-text" style="padding:0px;">
+
+                                            <div class="col-md-12 features11 section_2" id="features11-b" style="padding:0px !important;">
+
+
+                                                <div class="col-md-12" style="height:100%; padding:0px !important">
+                                                    <div style="height:inherit">
+                                                        <div class="custom-figure" style="padding-right:0px !important;">
+                                                            <div class="features16" id="features16-d">
+
+
+                                                                <div class="team-item col-lg-12 col-md-12">
+
+                                                                    <div class="item-caption py-3">
+                                                                        <div class="item-name px-2">
+                                                                            <p class="custom-fonts-style display-5" style="color:white;">
+                                                                                TSA DIRECTORY
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="item-role" style="font-family:'Montserrat-Light'; text-align:left; color:white;">
+                                                                            Learn about the National Operations of TSA, Inc.
+                                                                        </div>
+                                                                        <br />
+                                                                        <div style="flex-direction:row; text-align:left;">
+                                                                            <a style="display:inline-block; margin:0px !important;" href="#" class="col-md-12 btn btn-white-outline">Email Us</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="footer3 section_3" id="footer3-7" style="height:inherit; width:100%; padding:1rem;">
+                                                            <div class="content">
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">CONTACT US</span>
+                                                                        <p style="font-family:Montserrat;">
+                                                                            <span>
+                                                                                1904 Association Drive
+                                                                                <br />Reston, VA 20191-1540
+                                                                            </span>
+                                                                            <br /><br />
+                                                                            <strong>Phone:</strong> 703.860.9000
+                                                                            <br />
+                                                                            <strong>Toll Free:</strong> 888.860.9010
+                                                                            <br />
+                                                                            <strong>Fax:</strong> 703.758.4852
+                                                                        </p>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">ALUMNI</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">Contact information for the National TSA Alumni Association Council.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">BOARD OF DIRECTORS</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">The governing body of TSA, Inc.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">COMPETITION REGULATIONS COMMITTEE</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">The authority on national TSA competitive events.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <br />
+                                                            <div class="content">
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">NATIONAL TSA STAFF</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">Administrative office and national TSA staff information.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">NATIONAL TSA OFFICERS</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">The president, vice president, secretary, treasurer, reporter and sergeant-at-arms.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">REGIONAL COORDINATORS</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">An available resource for TSA activities.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12 col-sm-12">
+                                                                    <div style="text-align:center">
+
+                                                                        <span style="text-align:center; width:100%; color: #163eae; font-family:'Montserrat-Black'; text-transform:uppercase;">STATE DELEGATIONS</span>
+                                                                        <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light;" class="listServe2">Alphabetical listing of state delegation contact information.</p>
+                                                                        <br />
+                                                                        <a style="margin:0px; padding:0.5rem 2rem 0.5rem 2rem; width:100%;" class="btn btn-primary">More</a>
+                                                                        <hr />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="menu section_4" once="menu" id="menu2-3">
+        <nav style="box-shadow:rgba(0,0,0,0.4) 0px 0px 2px 5px; padding: 0px !important" class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-toggleable-sm">
+            <button onclick="openNav()" class="navbar-toggler navbar-toggler-right" type="button">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <table style="width:100%">
+                <tr class="aligny">
+                    <td style="padding-top:1rem;" class="align-center menu-logo">
+                        <div>
+                            <span class="navbar-logo">
+                              <a href="../../Constructory/Home">
+                                <img src="../../assets/images/tsalogomod-244x121.png" alt="Sorry, image could not load." title="" style="height: 5rem;">
+                              </a>
+                            </span>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="aligny">
+                    <td class="align-center menu-logo">
+                        <div>
+                          <span class="navbar-caption-wrap">
+                              <a class="navbar-caption text-black display-4" href="../../Constructory/Home" style="font-family:'Montserrat-ExtraBold';color:#0e2c82 !important;">Technology Student Association</a>
+                          </span>
+                        </div>
+                    </td>
+                </tr>
+                <tr style="width:100%">
+                    <td class="collapse navbar-collapse" id="navbarSupportedContent2" style="padding:0px !important; width:100% !important">
+                        <ul class="navbar-nav nav-dropdown navbar-logo" style="font-family:'Montserrat-ExtraBold'; background:rgb(245, 245, 245); padding-top:0rem; padding-bottom:0rem; margin-right:0px !important; width:100%">
+                              {% if (page.category[0] == "About") %}
+                            <li style=" width:12.5%" class="nav-item dropdown activeSpecial">
+                              {% endif %}
+                              {% if (page.category[0] != "About") %}
+                            <li style=" width:12.5%" class="nav-item dropdown">
+                            {% endif %}
+                                <a style="font-family:'Montserrat-ExtraBold';" class="nav-link link text-black display-4" href="//" data-toggle="dropdown-submenu">
+                                    About
+                                </a>
+                                <!--Default Dropdown-->
+                                <div class="dropdown-menu" style="padding:0px;">
+
+                                    <div class="features11 section_5" id="features11-b" style="background:rgb(244, 244, 244); padding:0px !important; width:100vw;">
+
+
+                                        <div class="col-md-12" style="height:100%; padding:0px !important">
+                                            <div class="media-container-row" style="height:inherit">
+                                                <div class="custom-figure" style="width: 20%;background:rgb(244, 244, 244);padding-right:0px !important;">
+                                                    <div class="features16 section_6" id="features16-d" style="background:rgb(244, 244, 244);">
+
+
+
+                                                        <div class="container align-center" style="background:rgb(244, 244, 244);">
+
+
+                                                            <div class="row media-row">
+
+                                                                <div class="team-item col-lg-12 col-md-12">
+
+                                                                    <div class="item-caption py-3" style="background:rgb(244, 244, 244);">
+                                                                        <div class="item-name px-2">
+                                                                            <p class="custom-fonts-style display-5">
+                                                                                What is TSA?
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="item-role" style="font-family:Montserrat-Light">
+                                                                            <p>General information about the Technology Student Association.</p>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="footer3 section_3" id="footer3-7" style=" height:100%; width:100%; padding:1rem; background:rgb(235,235,235);">
+                                                    <div class="media-container-row content">
+                                                  {% for post in site.posts where: "category","About" where limit:4 %}
+                                                  {% unless post.tags[0] == "special" %}
+                                                  <div class="col-md-3 col-sm-4">
+                                                      <a class="hovery" href="{{ post.permalink | absolute_url }}">
+                                                        <div>
+                                                                 <span class="listServe">{{ post.title }}</span>
+                                                                <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">{{ post.blurb }}</p>
+
+                                                          </div>
+                                                          </a>
+                                                        </div>
+                                                        {% endunless %}
+                                                    {% endfor %}
+                                                  </div>
+                                                   <div class="media-container-row content">
+                                                {% for post in site.posts where: "category","About" limit:4 offset:3 %}
+                                                {% unless post.tags[0] == "special" %}
+                                                <div class="col-md-3 col-sm-4">
+                                                    <a class="hovery" href="{{ post.permalink | absolute_url }}">
+                                                      <div>
+                                                               <span class="listServe">{{ post.title }}</span>
+                                                              <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">{{ post.blurb }}</p>
+                                                            </div>
+                                                          </a>
+
+                                                    </div>
+                                                    {% endunless %}
+                                                  {% endfor %}
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li style=" width:12.5%" class="nav-item dropdown">
+                                <a style="font-family:'Montserrat-ExtraBold';" class="nav-link link text-black display-4" href="//" data-toggle="dropdown-submenu">
+                                    Join
+                                </a>
+                                <!--Default Dropdown-->
+                                <div class="dropdown-menu" style="padding:0px; position:absolute; transform:translateX(-12.5%);">
+
+                                    <div class="features11 section_5" id="features11-b" style="background:rgb(244, 244, 244); padding:0px !important; width:100vw;">
+
+
+                                        <div class="col-md-12" style="height:100%; padding:0px !important">
+                                            <div class="media-container-row" style="height:inherit">
+                                                <div class="custom-figure" style="width: 20%;background:rgb(244, 244, 244);padding-right:0px !important;">
+                                                    <div class="features16 section_6" id="features16-d" style="background:rgb(244, 244, 244);">
+
+
+
+                                                        <div class="container align-center" style="background:rgb(244, 244, 244);">
+
+
+                                                            <div class="row media-row">
+
+                                                                <div class="team-item col-lg-12 col-md-12">
+
+                                                                    <div class="item-caption py-3" style="background:rgb(244, 244, 244);">
+                                                                        <div class="item-name px-2">
+                                                                            <p class="custom-fonts-style display-5">
+                                                                                Join TSA
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="item-role" style="font-family:Montserrat-Light">
+                                                                            <p>Participating in STEM competitions is just one reason to be involved in TSA.</p>
+                                                                        </div>
+                                                                        <br />
+                                                                        <div class="item-role">
+                                                                            <a class="btn btn-primary" href="#">Why Join?</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="footer3 section_3" id="footer3-7" style=" height:100%; width:100%; padding:1rem; background:rgb(235,235,235);">
+                                                    <div class="media-container-row content">
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">AFFILIATION AND DUES</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">Information on TSA's membership affiliation and the cost of dues.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">BEING AND ADVISOR</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">What you need to know about having a TSA chapter.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">ONLINE AFFILIATION INSTRUCTIONS</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">Are you a teacher ready to start a TSA chapter?</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="media-container-row content">
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">MEMBER AFFILIATION POLICIES</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">Rules for affiliating and managing a chapter.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">TESTIMONIALS</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">Learn what is being said about TSA.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">TSA DRESS CODE</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">Know the official dress code policy for TSA’s competitions and other activities.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li style=" width:12.5%" class="nav-item dropdown">
+                                <a style="font-family:'Montserrat-ExtraBold';" class="nav-link link text-black display-4" href="//" data-toggle="dropdown-submenu">
+                                    Competitions
+                                </a>
+                                <!--Default Dropdown-->
+                                <div class="dropdown-menu" style="padding:0px; position:absolute; transform:translateX(-25%);">
+
+                                    <div class="features11 section_5" id="features11-b" style="background:rgb(244, 244, 244); padding:0px !important; width:100vw;">
+
+
+                                        <div class="col-md-12" style="height:100%; padding:0px !important">
+                                            <div class="media-container-row" style="height:inherit">
+                                                <div class="custom-figure" style="width: 20%;background:rgb(244, 244, 244);padding-right:0px !important;">
+                                                    <div class="features16 section_6" id="features16-d" style="background:rgb(244, 244, 244);">
+
+
+
+                                                        <div class="container align-center" style="background:rgb(244, 244, 244);">
+
+
+                                                            <div class="row media-row">
+
+                                                                <div class="team-item col-lg-12 col-md-12">
+
+                                                                    <div class="item-caption py-3" style="background:rgb(244, 244, 244);">
+                                                                        <div class="item-name px-2">
+                                                                            <p class="custom-fonts-style display-5">
+                                                                                Competitions
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="item-role" style="font-family:'Montserrat-Light'">
+                                                                            <p>Interested in competing? Get the information you need here.</p>
+                                                                        </div>
+                                                                        <br />
+                                                                        <div class="item-role">
+                                                                            <a href="#" class="btn btn-primary">Themes and Problems</a>
+                                                                            <br /><a href="#" class="btn btn-success-outline">Competition Updates</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="footer3 section_3" id="footer3-7" style=" height:100%; width:100%; padding:1rem; background:rgb(235,235,235);">
+                                                    <div class="media-container-row content">
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">COMPETITION FORMS</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">Forms and related documents for national TSA competitions.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">TSA HIGH SCHOOL COMPETITIONS</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">Overview of TSA's high school competitive events.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">TSA MIDDLE SCHOOL COMPETITIONS</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">Overview of TSA's middle school competitive events.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">TSA DRESS CODE</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">Know the official dress code policy for TSA’s competitions and other activities.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="media-container-row content">
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">JUNIOR SOLAR SPRINT</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">Funded by the Army Educational Outreach Program (AEOP), JSS engages 5th - 8th grade youth in designing, building and racing model solar cars.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">TSA <em>TEAMS</em> COMPETITION</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">Tests of Engineering Aptitude, Mathematics and Science (TEAMS) is an annual competition for high school and middle school students. The theme for 2017 is “Engineering The Environment.”</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">PROJECT LEAD THE WAY (PLTW) PARTNERSHIP</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">TSA partners with PLTW to advance shared goals for success in science, technology, engineering and mathematics education.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">VEX ROBOTICS COMPETITION</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">A Signature Robotics Competition Using the VEX Robotics Design System.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li style=" width:12.5%" class="nav-item dropdown">
+                                <a style="font-family:'Montserrat-ExtraBold';" class="nav-link link text-black display-4" href="//" data-toggle="dropdown-submenu">
+                                    Leadership
+                                </a>
+                                <!--Default Dropdown-->
+                                <div class="dropdown-menu" style="padding:0px; position:absolute; transform:translateX(-37.5%);">
+
+                                    <div class="features11 section_5" id="features11-b" style="background:rgb(244, 244, 244); padding:0px !important; width:100vw;">
+
+
+                                        <div class="col-md-12" style="height:100%; padding:0px !important">
+                                            <div class="media-container-row" style="height:inherit">
+                                                <div class="custom-figure" style="width: 20%;background:rgb(244, 244, 244);padding-right:0px !important;">
+                                                    <div class="features16 section_6" id="features16-d" style="background:rgb(244, 244, 244);">
+
+
+
+                                                        <div class="container align-center" style="background:rgb(244, 244, 244);">
+
+
+                                                            <div class="row media-row">
+
+                                                                <div class="team-item col-lg-12 col-md-12">
+
+                                                                    <div class="item-caption py-3" style="background:rgb(244, 244, 244);">
+                                                                        <div class="item-name px-2">
+                                                                            <p class="custom-fonts-style display-5">
+                                                                                Leadership
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="item-role" style="font-family:'Montserrat-Light';">
+                                                                            <p>Discover how TSA provides its members with world-class leadership opportunities.</p>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="footer3 section_3" id="footer3-7" style=" height:100%; width:100%; padding:1rem; background:rgb(235,235,235);">
+                                                    <div class="media-container-row content">
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">THE STUDENT LEADERSHIP CHALLENGE</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">See lesson plans and activities for teaching the Five Practices for Becoming an Exemplary Leader.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">NATIONAL TSA OFFICER HIGHLIGHTS</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">The national TSA officers lead TSA's members throughout the year.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">NATIONAL TSA OFFICER CANDIDATE PROGRAM</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">Interested in running for a national office? Here’s what's involved.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="media-container-row content">
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">LEAP OVERVIEW</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">TSA's Leadership Program - Leadership, Education, Achievement and Personal Growth.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">LEAP LEGACY CHAPTER</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">Chapters showcase their Leadership activities for a chance for national recognition.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">LEAP COMPETITION ENGAGEMENT</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">Leadership is incorporated into each TSA competition.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li style=" width:12.5%" class="nav-item dropdown">
+                                <a style="font-family:'Montserrat-ExtraBold';" class="nav-link link text-black display-4" href="//" data-toggle="dropdown-submenu">
+                                    Events
+                                </a>
+                                <!--Default Dropdown-->
+                                <div class="dropdown-menu" style="padding:0px; position:absolute; transform:translateX(-49.7%);">
+
+                                    <div class="features11 section_5" id="features11-b" style="background:rgb(244, 244, 244); padding:0px !important; width:100vw;">
+
+
+                                        <div class="col-md-12" style="height:100%; padding:0px !important">
+                                            <div class="media-container-row" style="height:inherit">
+                                                <div class="custom-figure" style="width: 20%;background:rgb(244, 244, 244);padding-right:0px !important;">
+                                                    <div class="features16 section_6" id="features16-d" style="background:rgb(244, 244, 244);">
+
+
+
+                                                        <div class="container align-center" style="background:rgb(244, 244, 244);">
+
+
+                                                            <div class="row media-row">
+
+                                                                <div class="team-item col-lg-12 col-md-12">
+
+                                                                    <div class="item-caption py-3" style="background:rgb(244, 244, 244);">
+                                                                        <div class="item-name px-2">
+                                                                            <p class="custom-fonts-style display-5">
+                                                                                Events & Conferences
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="item-role" style="font-family:'Montserrat-Light'">
+                                                                            <p>Find out what's going on with TSA at the local, state, and national levels.</p>
+                                                                        </div>
+                                                                        <br />
+                                                                        <div class="item-role">
+                                                                            <a class="btn btn-primary">
+                                                                                Calendar of Events
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="footer3 section_3" id="footer3-7" style=" height:100%; width:100%; padding:1rem; background:rgb(235,235,235);">
+
+                                                    <div class="media-container-row content">
+
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">NATIONAL TSA CONFERENCE</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">TSA's annual main event. Location, accommodation and competition information.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">STATE CONFERENCES</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">State delegations hold regional and/or state conferences.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">TSA UNITE</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">Learn about a summer STEM program for high school students.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="media-container-row content">
+
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">NATIONAL TSA WEEK</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">Showcase your TSA chapter to your school and community.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">CAREER AND TECHNICAL EDUCATION MONTH</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">Support the annual recognition of career and technical education.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">TSA ADVISOR APPRECIATION WEEK</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">Student members can show their gratitide to the chapter advisors who make TSA possible.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li style=" width:12.5%" class="nav-item dropdown">
+                                <a style="font-family:'Montserrat-ExtraBold';" class="nav-link link text-black display-4" href="//" data-toggle="dropdown-submenu">
+                                    Students
+                                </a>
+                                <!--Default Dropdown-->
+                                <div class="dropdown-menu" style="padding:0px; position:absolute; transform:translateX(-62%);">
+
+                                    <div class="features11 section_5" id="features11-b" style="background:rgb(244, 244, 244); padding:0px !important; width:100vw;">
+
+
+                                        <div class="col-md-12" style="height:100%; padding:0px !important">
+                                            <div class="media-container-row" style="height:inherit">
+                                                <div class="custom-figure" style="width: 20%;background:rgb(244, 244, 244);padding-right:0px !important;">
+                                                    <div class="features16 section_6" id="features16-d" style="background:rgb(244, 244, 244);">
+
+
+
+                                                        <div class="container align-center" style="background:rgb(244, 244, 244);">
+
+
+                                                            <div class="row media-row">
+
+                                                                <div class="team-item col-lg-12 col-md-12">
+
+                                                                    <div class="item-caption py-3" style="background:rgb(244, 244, 244);">
+                                                                        <div class="item-name px-2">
+                                                                            <p class="custom-fonts-style display-5">
+                                                                                For Students
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="item-role" style="font-family:'Montserrat-Light'">
+                                                                            <p>Get involved with National TSA in your middle and high school years.</p>
+                                                                        </div>
+                                                                        <br />
+                                                                        <div class="item-role" style="align-content:flex-start; text-align:left">
+                                                                            <p class="custom-text form-text custom-fonts-style display-7">
+                                                                                Join our mailing list.
+                                                                            </p>
+                                                                            <small style="font-family:'Montserrat-Light'; text-align:left;">Sign up here to receive informational emails from national TSA.</small>
+                                                                            <div class="media-container-column" data-form-type="formoid">
+                                                                                <div data-form-alert="" hidden="" class="align-center">
+                                                                                    Thanks for filling out the form!
+                                                                                </div>
+
+                                                                                <form class="form-inline">
+                                                                                    <div class="form-group">
+                                                                                        <input type="email" class="form-control input-sm input-inverse my-2" name="email" required="" data-form-field="Email" placeholder="Email" id="email-footer3-7">
+                                                                                    </div>
+                                                                                    <button style="margin-left:0px;" href="" class="btn btn-primary" type="submit">Subscribe</button>
+                                                                                </form>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Default Dropdown-->
+                                                <div class="footer3 section_3" id="footer3-7" style=" height:100%; width:100%; padding:1rem; background:rgb(235,235,235);">
+
+                                                    <div class="media-container-row content">
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">SCHOOL SCENE NEWSLETTER</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">TSA's official online newsletter. Published three times a year.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">COLLEGE & CAREER PATH INFORMATION</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">Links and resources for a STEM career path.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">STUDENT SCHOLARSHIP</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">TSA members have the opportunity to earn post-secondary scholarship funding.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">ACHIEVEMENT & RECOGNITION AWARDS</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">Individuals who contribute to the goals of TSA are recognized.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="media-container-row content">
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">NATIONAL SERVICE PROJECT</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">TSA partners with the American Cancer Society. Get involved in this worthwhile cause.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">TSA CHAMPION FUND</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">Contribute to this philanthropic program to help middle and high school students to participate in TSA.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe"><em>COLLEGE AWARENESS OF TSA</em> INITIATIVE</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">Learn how TSA works with colleges to get recognition for its members. See the letter of support for TSA and learn how getting involved can help with college admissions.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">DRESS CODE</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">Know the official dress code policy for TSA’s competitions and other activities.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li style=" width:12.5%" class="nav-item dropdown">
+                                <a style="font-family:'Montserrat-ExtraBold';" class="nav-link link text-black display-4" href="//" data-toggle="dropdown-submenu">
+                                    Adults
+                                </a>
+                                <!--Default Dropdown-->
+                                <div class="dropdown-menu" style="padding:0px; position:absolute; transform:translateX(-74.2%);">
+
+                                    <div class="features11 section_5" id="features11-b" style="background:rgb(244, 244, 244); padding:0px !important; width:100vw;">
+
+
+                                        <div class="col-md-12" style="height:100%; padding:0px !important">
+                                            <div class="media-container-row" style="height:inherit">
+                                                <div class="custom-figure" style="width: 20%;background:rgb(244, 244, 244);padding-right:0px !important;">
+                                                    <div class="features16 section_6" id="features16-d" style="background:rgb(244, 244, 244);">
+
+
+
+                                                        <div class="container align-center" style="background:rgb(244, 244, 244);">
+
+
+                                                            <div class="row media-row">
+
+                                                                <div class="team-item col-lg-12 col-md-12">
+
+                                                                    <div class="item-caption py-3" style="background:rgb(244, 244, 244);">
+                                                                        <div class="item-name px-2">
+                                                                            <p class="custom-fonts-style display-5">
+                                                                                For Adults
+                                                                            </p>
+                                                                        </div>
+                                                                        <br />
+                                                                        <div style="flex-direction:row; text-align:left;">
+                                                                            <a style="display:inline-block; margin:0px !important;" href="#" class="col-md-5 btn btn-success-outline">Parents</a>
+                                                                            <a style=" display:inline-block; margin:0px !important;" href="#" class="col-md-5 btn btn-warning-outline">Alumni</a>
+                                                                        </div>
+                                                                        <br />
+                                                                        <div class="item-role" style="align-content:flex-start; text-align:left">
+                                                                            <p class="custom-text form-text custom-fonts-style display-7">
+                                                                                Join our mailing list.
+                                                                            </p>
+                                                                            <small style="font-family:'Montserrat-Light'; text-align:left;">Sign up here to receive informational emails from national TSA.</small>
+                                                                            <div class="media-container-column" data-form-type="formoid">
+                                                                                <div data-form-alert="" hidden="" class="align-center">
+                                                                                    Thanks for filling out the form!
+                                                                                </div>
+
+                                                                                <form class="form-inline">
+                                                                                    <div class="form-group">
+                                                                                        <input type="email" class="form-control input-sm input-inverse my-2" name="email" required="" data-form-field="Email" placeholder="Email" id="email-footer3-7">
+                                                                                    </div>
+                                                                                    <button style="margin-left:0px;" href="" class="btn btn-primary" type="submit">Subscribe</button>
+                                                                                </form>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="footer3 section_3" id="footer3-7" style=" height:100%; width:100%; padding:1rem; background:rgb(235,235,235);">
+
+                                                    <div class="media-container-row content">
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">TOOLKITS & RESOURCES</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">Information and materials that support TSA chapter activities.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">SCHOOL SCENE NEWSLETTER</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">TSA's official online newsletter. Published three times a year.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">NATIONAL  SERVICE PROJECT</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">TSA partners with the American Cancer Society. Get involved in this worthwhile cause.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">ACHIEVEMENT & RECOGNITION AWARDS</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">Individuals who contribute to the goals of TSA are recognized.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="media-container-row content">
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">LEGISLATIVE TOOLS</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">Resources for communicating with legislators about TSA’s purpose.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">TRADEMARK POLICIES</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">Document that governs the use of the TSA name and emblem.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">VOLUNTEER OPPORTUNITIES</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">TSA offers a variety of volunteer opportunities for adults who are engaged in STEM careers and education.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">TSA DRESS CODE</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">Know the official dress code policy for TSA’s competitions and other activities.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+
+                                                    </div>
+                                                    <div content="" style="padding:1rem"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li style=" width:12.5%" class="nav-item dropdown">
+                                <a style="font-family:'Montserrat-ExtraBold';" class="nav-link link text-black display-4" href="//" data-toggle="dropdown-submenu">
+                                    Directory
+                                </a>
+                                <!--Default Dropdown-->
+                                <div class="dropdown-menu" style="padding:0px; position:absolute; transform:translateX(-86.6%);">
+
+                                    <div class="features11 section_5" id="features11-b" style="background:rgb(244, 244, 244); padding:0px !important; width:100vw;">
+
+
+                                        <div class="col-md-12" style="height:100%; padding:0px !important">
+                                            <div class="media-container-row" style="height:inherit">
+                                                <div class="custom-figure" style="width: 20%;background:rgb(244, 244, 244);padding-right:0px !important;">
+                                                    <div class="features16 section_6" id="features16-d" style="background:rgb(244, 244, 244);">
+
+
+
+                                                        <div class="container align-center" style="background:rgb(244, 244, 244);">
+
+
+                                                            <div class="row media-row">
+
+                                                                <div class="team-item col-lg-12 col-md-12">
+
+                                                                    <div class="item-caption py-3" style="background:rgb(244, 244, 244);">
+                                                                        <div class="item-name px-2">
+                                                                            <p class="custom-fonts-style display-5">
+                                                                                TSA DIRECTORY
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="item-role" style="font-family:'Montserrat-Light'; text-align:left">
+                                                                            Learn about the National Operations of TSA, Inc.
+                                                                        </div>
+                                                                        <br />
+                                                                        <div style="flex-direction:row; text-align:left;">
+                                                                            <a style="display:inline-block; margin:0px !important;" href="#" class="col-md-12 btn btn-success-outline">Email Us</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="footer3 section_3" id="footer3-7" style=" height:100%; width:100%; padding:1rem; background:rgb(235,235,235);">
+
+                                                    <div class="media-container-row content">
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <div>
+
+                                                                <span class="listServe" style="color:#6f1111 !important;">CONTACT US</span>
+                                                                <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">
+                                                                    <span class="listServe">
+                                                                        1904 Association Drive
+                                                                        <br />Reston, VA 20191-1540
+                                                                    </span>
+                                                                    <br /><br />
+                                                                    <strong>Phone:</strong> 703.860.9000
+                                                                    <br />
+                                                                    <strong>Toll Free:</strong> 888.860.9010
+                                                                    <br />
+                                                                    <strong>Fax:</strong> 703.758.4852
+                                                                </p>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">ALUMNI</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">Contact information for the National TSA Alumni Association Council.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">BOARD OF DIRECTORS</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">The governing body of TSA, Inc.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">COMPETITION REGULATIONS COMMITTEE</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">The authority on national TSA competitive events.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="media-container-row content">
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">NATIONAL TSA STAFF</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">Administrative office and national TSA staff information.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">NATIONAL TSA OFFICERS</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">The president, vice president, secretary, treasurer, reporter and sergeant-at-arms.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">REGIONAL COORDINATORS</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">An available resource for TSA activities.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4">
+                                                            <a class="hovery">
+                                                                <div>
+
+                                                                    <span class="listServe">STATE DELEGATIONS</span>
+                                                                    <p style="margin:0px !important; padding:0px !important; font-family:Montserrat-Light; float:left;" class="listServe2">Alphabetical listing of state delegation contact information.</p>
+
+                                                                </div>
+
+                                                            </a>
+                                                        </div>
+
+                                                    </div>
+                                                    <div content="" style="padding:1rem"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+
+                            </li>
+                        </ul>
+
+                    </td>
+                </tr>
+            </table>
+        </nav>-
+    </section>
+</div>
+
+{{ content }}
+
+<section class="section_10" id="footer2-r">
+
+
+
+
+
+    <div class="container">
+        <div class="media-container-row content custom-white">
+            <div class="col-12 col-md-3 custom-fonts-style display-7">
+                <p class="custom-text"></p>
+                <p>
+                    <strong>Contact</strong>
+                    <br>
+                    <span style="font-family:'Montserrat-Light'">
+                        <br>1904 Association Drive
+                        <br>Reston, VA 20191-1540<br>
+                        <br>
+                        <br><strong>Phone:</strong> 703.860.9000<br>
+                        <strong>Toll Free:</strong> 888.860.9010<br>
+                        <strong>Fax:</strong> 703.758.4852
+                    </span>
+                </p>
+                <p></p>
+            </div>
+            <div class="col-12 col-md-3 display-7">
+                <p style="font-family:'Montserrat-Light'">
+                    <strong style="font-family:'Montserrat-ExtraBold'">Information</strong>
+                    <br>
+                    <br><a class="text-primary" href="#/">
+                        Manage my TSA
+                    </a>
+                    <br><a class="text-primary" href="#/">
+                        TEAMS
+                    </a>
+                    <br><a class="text-primary" href="#/">
+                        National TSA Conference
+                    </a>
+                    <br><a class="text-primary" href="#/">
+                        Shop
+                    </a>
+                    <br><a class="text-primary" href="#/">
+                        Support
+                    </a>
+                    <br><a class="text-primary" href="#/">
+                        MyTSA
+                    </a>
+                    <br>
+                </p>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&amp;q=place_id:ChIJmX3uNDpItokRw_c-NNmTd2g" allowfullscreen=""></iframe></div>
+            </div>
+        </div>
+        <div class="footer-lower">
+            <div class="media-container-row">
+                <div class="col-sm-12">
+                    <hr>
+                </div>
+            </div>
+            <div class="media-container-row custom-white">
+                <div class="col-sm-6 copyright">
+                    <p class="custom-text custom-fonts-style display-7">
+                        © Copyright 2018 Technology Student Association
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-list align-right">
+                        <div class="soc-item">
+                            <a href="#" target="_blank">
+                                <span class="socicon-twitter socicon custom-iconfont custom-iconfont-social"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="#" target="_blank">
+                                <span class="socicon-facebook socicon custom-iconfont custom-iconfont-social"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="#" target="_blank">
+                                <span class="socicon-youtube socicon custom-iconfont custom-iconfont-social"></span>
+                            </a>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+{% include footer.html %}

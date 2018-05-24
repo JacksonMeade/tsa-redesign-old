@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+<br>
+<br>
+<section class="custom-section content5" id="content5-11" style="padding-bottom:3rem; background-image:url(../../../{{ page.reviewImgUrl }}); margin-top:5.75rem;  background-position: 50% 50%; background-repeat: no-repeat; z-index: 0; position: relative; background-size: cover;">
+
+  <div class="custom-overlay" style="opacity: 0.6; background-color: rgb(24, 45, 103);">
+  </div>
+
+  <div class="container">
+      <div class="media-container-row">
+          <div class="title col-12 col-md-8">
+              <h3 style="color:white; margin-top:2rem;" class="align-center mbr-bold mbr-white pb-3 mbr-fonts-style display-2">
+                <strong>  {{ page.title }} </strong>
+              </h3>
+              <p class="align-center" style="color: #c5c5c5">
+                  <em> {{ page.blurb }} </em>
+              </p>
+
+
+
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="mbr-section article content1" id="content1-12" style=" padding-bottom: 5rem; background:none; margin-top:-2.5rem;">
+
+
+
+    <div class="container" style="background:none;">
+        <div class="media-container-row" style="padding-top:3rem; padding-bottom:5rem; background:white; box-shadow: 0px 0px 8px rgba(20,20,20,0.5);">
+            <div class="mbr-text col-11 col-md-11 mbr-fonts-style display-7">
+              {% if ((page.featuredLinks != null) || (page.featuredFiles != null) %}
+              <div class="col-md-4 col-sm-12 mover" style="float:right;  height: auto; margin: 10px; padding: 1rem; background-color: #e5e5e5;">
+                {% if ((page.featuredLinks != null) %}
+                <h3 class="align-center">Related Links</h3><hr/>
+                  <ul>{% for link in page.featuredLinks %}
+                    <a href="{{ page.featuredLinks_Urls[forloop.index] }}"><li class="linkList">{{ link }}</li></a>
+                  {% endfor %}</ul>
+                {% endif  %}
+                {% if ((page.featuredFiles != null) %}
+                <h3 class="align-center">Important Files</h3><hr/>
+                <ul>{% for file in page.featuredFiles %}
+                  <a href="{{ page.featuredFiles_Urls[forloop.index] }}"><li class="fileList">{{ file }}</li></a>
+                {% endfor %}</ul>
+                {% endif  %}
+              </div>
+              {% endif %}
+                {{ content }}
+            </div>
+        </div>
+    </div>
+</section>
