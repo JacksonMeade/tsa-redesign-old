@@ -1,41 +1,16 @@
 # TSA
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
+Welcome to the GitHub Repository for the new TSA Website! 'THIS IS A TEST SITE.' Frameworks, files, and information may be incomplete and are definitely not final. This site currently uses a custom Jekyll theme to make the site easily updatable through highly accessable.md files.
 
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
-
-TODO: Delete this and the text above, and describe your gem
-
-
-## Installation
-
-Add this line to your Jekyll site's `Gemfile`:
-
-```ruby
-gem "TSA"
-```
-
-And add this line to your Jekyll site's `_config.yml`:
-
-```yaml
-theme: TSA
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install TSA
+The documentation described here (to be continuously updated) will tell you what is going on here if you are a soon-to-be contributor.
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+There are ... TODO: FINISH THIS DOCUMENTATION
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/JacksonMeade/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 
