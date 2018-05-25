@@ -1,4 +1,4 @@
- 
+
      .hover-shadow {
      box-shadow: none;
      background: #f2f2f2;
@@ -21,7 +21,7 @@
            list-style-type: none;
          }
          .linkList:before {
-           content: "\e989    ";
+           content: "\e946    ";
            color: inherit;
            text-decoration: ExtraBold;
            font-size: inherit;
@@ -45,7 +45,7 @@
            list-style-type: none;
          }
          .fileList:before {
-           content: "\e946    ";
+           content: "\e989    ";
            text-decoration: ExtraBold;
            color: inherit;
            font-size: inherit;
