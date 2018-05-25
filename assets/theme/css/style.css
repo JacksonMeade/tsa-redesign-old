@@ -1,7 +1,169 @@
-/*!
- * official v4 theme (https://official.com/)
- * Copyright 2017 official
- */
+ 
+     .hover-shadow {
+     box-shadow: none;
+     background: #f2f2f2;
+     padding: 1rem;
+     /*margin-bottom: 0.75rem;*/
+     z-index: 1;
+     }
+
+     .hover-shadow:hover {
+     box-shadow: 5px 5px 3px lightgrey;
+     transition: 0.2s ease-in-out;
+     z-index: 2;
+     background: #e6e6e6;
+     position:relative;
+     }
+
+         .linkList {
+           font-family: 'Montserrat-Light' !important;
+           color:rgb(51, 119, 255) !important;
+           list-style-type: none;
+         }
+         .linkList:before {
+           content: "\e989    ";
+           color: inherit;
+           text-decoration: ExtraBold;
+           font-size: inherit;
+           font-family: OfficialIcons !important;
+           speak: none;
+           font-style: normal;
+           font-weight: normal;
+           font-variant: normal;
+           text-transform: none;
+           line-height: 1;
+           -webkit-font-smoothing: antialiased;
+         }
+         .linkList:hover {
+           color:rgb(255, 204, 0) !important;
+           transition: 0.2s ease-in-out;
+         }
+
+         .fileList {
+           font-family: 'Montserrat-Light' !important;
+           color:rgb(51, 119, 255) !important;
+           list-style-type: none;
+         }
+         .fileList:before {
+           content: "\e946    ";
+           text-decoration: ExtraBold;
+           color: inherit;
+           font-size: inherit;
+           font-family: OfficialIcons !important;
+           speak: none;
+           font-style: normal;
+           font-weight: normal;
+           font-variant: normal;
+           text-transform: none;
+           line-height: 1;
+           -webkit-font-smoothing: antialiased;
+         }
+         .fileList:hover {
+           color:rgb(255, 204, 0) !important;
+           transition: 0.2s ease-in-out;
+         }
+
+         @media(min-width:768px) {
+
+             .aligny {
+               width: 100vw;
+               text-align: center;
+             }
+
+             .specialty {
+                 width: 30rem;
+             }
+
+             .specialty2 {
+               width: 30rem;
+             }
+
+             .floater {
+                 float: right;
+             }
+         }
+
+         @media(max-width:990px) {
+             .specialtyContainer {
+                 margin-top: 6rem;
+                 width: 95%;
+                 margin-left: 7%;
+                 margin-right: 2.5%;
+             }
+
+             .floater {
+                 width: 85%;
+                 text-align: center;
+             }
+         }
+
+         @media(max-width: 837px) {
+             .specialty {
+                 width: 80vw;
+             }
+
+             .specialty2 {
+               width: 80%;
+             }
+
+
+             .floater {
+                 width: auto;
+                 float: inherit;
+             }
+
+             .mover {
+               margin-top: 100%;
+             }
+         }
+
+         .activeSpecial {
+             color: rgb(158, 0, 0) !important;
+             border-bottom: 5px solid rgb(158, 0, 0);
+         }
+
+             .activeSpecial a {
+                 color: rgb(158, 0, 0) !important;
+             }
+
+         .listServe {
+             color: #163eae;
+             text-align: left !important;
+             text-transform: uppercase;
+         }
+
+         .hovery {
+         }
+
+             .hovery span {
+                 margin-bottom: 1rem;
+             }
+
+             .hovery:hover span {
+                 color: #6f1111;
+                 transition: ease-in 0.3s;
+             }
+
+             .hovery:hover p {
+                 font-weight: 900;
+                 color: #163eae;
+                 transition: ease-in 0.3s;
+             }
+
+         .sidenav {
+             height: 100%; /* 100% Full-height */
+             width: 0%; /* 0 width - change this with JavaScript */
+             opacity: 0;
+             position: fixed; /* Stay in place */
+             z-index: 2000; /* Stay on top */
+             top: 0; /* Stay at the top */
+             left: 0;
+             background-color: #ffffff; /* Black*/
+             overflow-x: hidden; /* Disable horizontal scroll */
+             padding-top: 60px; /* Place content 60px from the top */
+             transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+         }
+
 section {
   background-color: #eeeeee;
 }
