@@ -2,18 +2,19 @@
     .customContent h2 {
         text-transform: uppercase;
         font-family: 'Montserrat-Black';
+        margin-bottom: 1rem;
     }
     .customContent h3 {
 
     }
     .customContent h4 {
-
+        font-weight: bold;
     }
     .customContent code {
-      font-family: 'Montserrat';
-      font-size: 1rem;
-      background: #f2f2f2;
-      color: #0e2c82;
+      font-family: 'Montserrat' !important;
+      font-size: 1rem !important;
+      background: #f2f2f2 !important;
+      color: #0e2c82 !important;
     }
     .customContent blockquote {
       font-family: 'Montserrat-Light';
