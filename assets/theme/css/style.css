@@ -1,4 +1,28 @@
 
+    .customContent h2 {
+        text-transform: uppercase;
+        font-family: 'Montserrat-Black';
+    }
+    .customContent h3 {
+
+    }
+    .customContent h4 {
+
+    }
+    .customContent code {
+      font-family: 'Montserrat';
+      font-size: 1rem;
+      background: #f2f2f2;
+      color: #0e2c82;
+    }
+    .customContent blockquote {
+      font-family: 'Montserrat-Light';
+      font-style: italic;
+    }
+    .customContent p {
+
+    }
+
      .hover-shadow {
      box-shadow: none;
      background: #f2f2f2;
