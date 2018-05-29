@@ -21,8 +21,6 @@
     code.customContent::selection {
       background: rgb(158, 0, 0);
       color:white;
-      transition: 0.2s ease-in-out;
-      font-weight: ExtraBold;
     }
 
     .customContent blockquote {
