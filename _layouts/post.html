@@ -4,7 +4,7 @@ layout: default
 
 <br>
 <br>
-<section class="custom-section content5" id="content5-11" style="padding-bottom:3rem; background-image:url(../../../{{ page.reviewImgUrl }}); margin-top:5.75rem;  background-position: 50% 50%; background-repeat: no-repeat; z-index: 0; position: relative; background-size: cover;">
+<section class="custom-section content5" id="content5-11" style="padding-bottom:3rem; background-image:url({{ page.reviewImgUrl | absolute_url }}); margin-top:5.75rem;  background-position: 50% 50%; background-repeat: no-repeat; z-index: 0; position: relative; background-size: cover;">
 
   <div class="custom-overlay" style="opacity: 0.6; background-color: rgb(24, 45, 103);">
   </div>
@@ -38,13 +38,13 @@ layout: default
                 {% if ((page.featuredLinks != null) %}
                 <h3 class="align-center">Related Links</h3><hr/>
                   <ul>{% for link in page.featuredLinks %}
-                    <a href="{{ page.featuredLinks_Urls[forloop.index] }}"><li class="linkList">{{ link }}</li></a>
+                    <a href="{{ page.featuredLinks_Urls[forloop.index] | absolute_url }}" target="_blank"><li class="linkList">{{ link }}</li></a>
                   {% endfor %}</ul>
                 {% endif  %}
                 {% if ((page.featuredFiles != null) %}
                 <h3 class="align-center">Important Files</h3><hr/>
                 <ul>{% for file in page.featuredFiles %}
-                  <a href="{{ page.featuredFiles_Urls[forloop.index] }}"><li class="fileList">{{ file }}</li></a>
+                  <a href="{{ page.featuredFiles_Urls[forloop.index] | absolute_url }}" target="_blank"><li class="fileList">{{ file }}</li></a>
                 {% endfor %}</ul>
                 {% endif  %}
               </div>
