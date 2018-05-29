@@ -21,9 +21,12 @@ reviewImgUrl: "/assets/images/motto-creed.jpg"
 
 The Technology Student Association enhances personal development, leadership, and career opportunities in STEM, whereby members apply and integrate these concepts through intracurricular activities, competitions, and related programs.
 
+
 #### The Technology Student Association's Motto
 
+
 `Learning to lead in a technical world`
+
 
 #### The Technology Student Association's Creed
 
