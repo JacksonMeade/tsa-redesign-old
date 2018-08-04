@@ -6,12 +6,12 @@ body {
   line-height: 1.5;
 }
 path.state {
-  fill:#cccccc !important;
+  fill:#717171 !important;
   fill-opacity:1;
 }
 
 path.state.member {
-  fill:#800000 !important;
+  fill:#cccccc !important;
   fill-opacity:1;
 }
 .brushstroke {
