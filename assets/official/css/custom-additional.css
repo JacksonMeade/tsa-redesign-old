@@ -8,11 +8,14 @@ body {
 path.state {
   fill:#717171 !important;
   fill-opacity:1;
+  shadow:
 }
-
+svg.map {
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
+  filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
+}
 path.state.member {
   fill:#cccccc !important;
-  fill-opacity:1;
 }
 .brushstroke {
   font-family: 'Painting-With-Chocolate' !important;
