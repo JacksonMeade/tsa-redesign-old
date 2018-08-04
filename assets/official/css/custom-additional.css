@@ -9,6 +9,11 @@ path.state {
   fill:#cccccc !important;
   fill-opacity:1;
 }
+
+path.state.member {
+  fill:#800000 !important;
+  fill-opacity:1;
+}
 .brushstroke {
   font-family: 'Painting-With-Chocolate' !important;
 }
