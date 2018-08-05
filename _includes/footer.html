@@ -32,13 +32,7 @@
       }
 
       //Part that fades in the selected object
-      var output = "";
-      if (clicked_id.includes("path")) {
-        output = "DefaultInfo";
-      }
-      else {
-       output = clicked_id + "Info";
-     }
+      var output = clicked_id + "Info";
     //  alert(output);
       var selectedElement = document.getElementById(output);
       selectedElement.classList.add('currentlySelected');
