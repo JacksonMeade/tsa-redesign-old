@@ -82,6 +82,15 @@ path.state.member:hover {
 .display-7 > .custom-iconfont {
   font-size: 1.6rem;
 }
+.imageOpacityGradient {
+  opacity: 0.5;
+  filter:alpha(opacity=50);
+  pointer-events: all;
+}
+.imageOpacityGradient:hover {
+  opacity:1.0;
+  filter:alpha(opacity=100);
+}
 /* ---- Fluid typography for mobile devices ---- */
 /* 1.4 - font scale ratio ( bootstrap == 1.42857 ) */
 /* 100vw - current viewport width */
