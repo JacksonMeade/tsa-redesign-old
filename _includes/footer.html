@@ -17,7 +17,7 @@
 <script type="text/javascript">
 
     function mapSelect(clicked_id) {
-      var allowed = !(document.getElementById((clicked_id + "Info")).classList.contains('currentlySelected'));
+      var allowed = !(document.getElementById(clicked_id + "Info").classList.contains('currentlySelected'));
       alert(allowed);
       // Part that fadesout the previous object
       var currentObject = document.getElementsByClassName('currentlySelected');
@@ -35,7 +35,7 @@
     //  alert(output);
       var selectedElement = document.getElementById(output);
       selectedElement.classList.add('currentlySelected');
-      unfade(selectedElement
+      unfade(selectedElement);
     }
 
     function fade(element) {
