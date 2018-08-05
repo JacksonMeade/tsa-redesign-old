@@ -18,12 +18,11 @@ path.state {
 }
 
 path.state.member {
-  fill:#cccccc !important;
-}
-
-path.state.member:hover {
-  transition: ease-in-out 0.5s;
-  fill: #800000 !important !important;
+    fill:#cccccc !important;
+  &:hover {
+    fill: #800000 !important;
+    transition: fill  0.5s ease-in-out;
+  }
 }
 
 .brushstroke {
