@@ -17,9 +17,47 @@
 <script type="text/javascript">
 
     function mapSelect(clicked_id) {
+      // Part that fadesout the previous object
+      var currentObject = document.getElementsByClassName('currentlySelected');
+      var i;
+      for (i=0;i<currentObject.length;i++){
+        currentObject[i].classList.remove('currentlySelected');
+        fade(currentObject[i]);
+      }
+
+      //Part that fades in the selected object
       var output = clicked_id + "Info";
       alert(output);
+      var selectedElement = document.getElementById(output);
+      selectedElement.classList.add('currentlySelected');
+      unfade(selectedElement);
     }
+
+    function fade(element) {
+        var op = 1;  // initial opacity
+        var timer = setInterval(function () {
+            if (op <= 0.1){
+                clearInterval(timer);
+                element.style.display = 'none';
+            }
+            element.style.opacity = op;
+            element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+            op -= op * 0.1;
+        }, 50);
+    }
+
+    function unfade(element) {
+    var op = 0.1;  // initial opacity
+    element.style.display = 'block';
+    var timer = setInterval(function () {
+        if (op >= 1){
+            clearInterval(timer);
+        }
+        element.style.opacity = op;
+        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op += op * 0.1;
+    }, 10);
+}
 
     /* Open the sidenav */
     function openNav() {
