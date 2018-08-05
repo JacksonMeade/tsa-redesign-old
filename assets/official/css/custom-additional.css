@@ -13,7 +13,7 @@ svg.map {
 }
 
 .image-responsive {
-  height: 40vh;
+  width: 100%;
 }
 
 .state {
