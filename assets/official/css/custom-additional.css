@@ -27,6 +27,12 @@ path.state.member:hover {
     transition: 0.2s ease-in-out;
 }
 
+.stateInfo {
+  font-family:'Open Sans';
+  color:rgba(255,255,255,0.5);
+  display:none;
+}
+
 .brushstroke {
   font-family: 'Painting-With-Chocolate' !important;
 }
