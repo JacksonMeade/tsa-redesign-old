@@ -12,6 +12,10 @@ svg.map {
   filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
 }
 
+.image-responsive {
+  height: 30vh;
+}
+
 .state {
   fill:#717171 !important;
   fill-opacity:1;
