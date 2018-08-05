@@ -22,16 +22,16 @@
 
       var i;
       for (i=0;i<currentObject.length;i++){
-        alert(currentObject[i].id)
+      //  alert(currentObject[i].id)
         var obj = document.getElementById(currentObject[i].id);
-        alert(obj.id)
+      //  alert(obj.id)
         fade(obj);
         currentObject[i].classList.remove('currentlySelected');
       }
 
       //Part that fades in the selected object
       var output = clicked_id + "Info";
-      alert(output);
+    //  alert(output);
       var selectedElement = document.getElementById(output);
       selectedElement.classList.add('currentlySelected');
       unfade(selectedElement);
