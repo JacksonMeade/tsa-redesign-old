@@ -19,22 +19,23 @@
     function mapSelect(clicked_id) {
       // Part that fadesout the previous object
       var currentObject = document.getElementsByClassName('currentlySelected');
-
       var i;
       for (i=0;i<currentObject.length;i++){
+      if (currentObject[i].id != clicked_id) {
       //  alert(currentObject[i].id)
         var obj = document.getElementById(currentObject[i].id);
       //  alert(obj.id)
         fade(obj);
+        //Part that fades in the selected object
+        var output = clicked_id + "Info";
+      //  alert(output);
+        var selectedElement = document.getElementById(output);
+        selectedElement.classList.add('currentlySelected');
+        unfade(selectedElement);
+
         currentObject[i].classList.remove('currentlySelected');
       }
-
-      //Part that fades in the selected object
-      var output = clicked_id + "Info";
-    //  alert(output);
-      var selectedElement = document.getElementById(output);
-      selectedElement.classList.add('currentlySelected');
-      unfade(selectedElement);
+      }
     }
 
     function fade(element) {
