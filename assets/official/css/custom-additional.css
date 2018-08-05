@@ -12,6 +12,10 @@ svg.map {
   filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
 }
 
+.float-right {
+  float: right !important;
+}
+
 .image-responsive {
   max-width: 100%;
   max-height:50vh;
