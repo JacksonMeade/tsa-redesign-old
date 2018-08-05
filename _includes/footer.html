@@ -25,7 +25,7 @@
         alert(currentObject[i].id)
         var obj = document.getElementById(currentObject[i].id);
         alert(obj.id)
-        obj.style.display = none;
+        fade(obj);
         currentObject[i].classList.remove('currentlySelected');
       }
 
