@@ -11,18 +11,18 @@ svg.map {
   filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
 }
 
-path.state {
+.state {
   fill:#717171 !important;
   fill-opacity:1;
   pointer-events: all;
 }
 
-path.state.member {
+.state.member {
     fill:#cccccc !important;
 
 }
 
-path.state.member:hover {
+.state.member:hover {
     fill: #800000 !important;
     transition: 0.2s ease-in-out;
 }
