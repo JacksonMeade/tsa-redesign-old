@@ -14,3 +14,7 @@
    font-family: 'Painting-With-Chocolate';
    src: url('Painting-With-Chocolate/font.ttf');
 }
+@font-face {
+  font-family: 'Open Sans';
+  src: url('Open-Sans/OpenSans-Regular.ttf')
+}
