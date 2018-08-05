@@ -18,6 +18,7 @@
 
     function mapSelect(clicked_id) {
       // Part that fadesout the previous object
+      if (!document.getElementById(clicked_id).classList.Contains('currentlySelected')) {
       var currentObject = document.getElementsByClassName('currentlySelected');
       var i;
       for (i=0;i<currentObject.length;i++){
@@ -34,6 +35,10 @@
       var selectedElement = document.getElementById(output);
       selectedElement.classList.add('currentlySelected');
       unfade(selectedElement);
+    }
+    else {
+      //DO NOTHING!!!
+    }
     }
 
     function fade(element) {
