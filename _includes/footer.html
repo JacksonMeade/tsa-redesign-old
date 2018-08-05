@@ -19,8 +19,10 @@
     function mapSelect(clicked_id) {
       // Part that fadesout the previous object
       var currentObject = document.getElementsByClassName('currentlySelected');
+
       var i;
       for (i=0;i<currentObject.length;i++){
+        alert(currentObject[i].id)
         currentObject[i].classList.remove('currentlySelected');
         fade(currentObject[i]);
       }
