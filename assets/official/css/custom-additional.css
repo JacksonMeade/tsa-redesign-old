@@ -30,6 +30,7 @@ path.state.member:hover {
 .stateInfo {
   font-family:'Open Sans';
   color:rgba(255,255,255,0.5);
+  margin-bottom:20%;
 }
 
 .brushstroke {
@@ -87,6 +88,9 @@ path.state.member:hover {
 /* (48 - 20)  48 == 48rem == 768px, 20 == 20rem == 320px(minimal supported viewport) */
 /* 0.65 - min scale variable, may vary */
 @media (max-width: 768px) {
+  .stateInfo {
+    width:125vw;
+  }
   .display-1 {
     font-size: 3.4rem;
     font-size: calc( 2.1374999999999997rem + (4.25 - 2.1374999999999997) * ((100vw - 20rem) / (48 - 20)));
