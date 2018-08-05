@@ -24,7 +24,7 @@
       for (i=0;i<currentObject.length;i++){
         alert(currentObject[i].id)
         currentObject[i].classList.remove('currentlySelected');
-        fade(currentObject[i]);
+        fade(document.getElementById(currentObject[i].id));
       }
 
       //Part that fades in the selected object
