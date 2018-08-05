@@ -23,11 +23,12 @@
       for (i=0;i<currentObject.length;i++){
       //  alert(currentObject[i].id)
         var obj = document.getElementById(currentObject[i].id);
-        if (obj.id != clicked_id) {
+        if (obj.id == clicked_id)
+        return;
+        }
       //  alert(obj.id)
         fade(obj);
         currentObject[i].classList.remove('currentlySelected');
-      }
       }
 
       //Part that fades in the selected object
