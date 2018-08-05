@@ -30,7 +30,6 @@ path.state.member:hover {
 .stateInfo {
   font-family:'Open Sans';
   color:rgba(255,255,255,0.5);
-  display:none;
 }
 
 .brushstroke {
