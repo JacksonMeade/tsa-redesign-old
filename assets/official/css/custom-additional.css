@@ -14,7 +14,7 @@ svg.map {
 path.state {
   fill:#717171 !important;
   fill-opacity:1;
-  shadow:
+  pointer-events: all;
 }
 
 path.state.member {
