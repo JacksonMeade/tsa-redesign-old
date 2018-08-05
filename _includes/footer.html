@@ -20,7 +20,7 @@
       var allowed = !(document.getElementById(clicked_id + "Info").classList.contains('currentlySelected'));
       //alert(allowed);
       if (allowed) {
-        if (clicked_id.contains("path")) {
+        if (clicked_id.includes("path")) {
           clicked_id = "Default";
         }
       // Part that fadesout the previous object
