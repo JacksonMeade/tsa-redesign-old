@@ -4,6 +4,7 @@
 body {
   font-style: normal;
   line-height: 1.5;
+  max-width:100vw;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue", Verdana, Calibri, Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
 
