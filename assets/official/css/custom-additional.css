@@ -17,6 +17,12 @@ svg.map {
   float: right !important;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .image-responsive {
   max-width: 100%;
   max-height:50vh;
