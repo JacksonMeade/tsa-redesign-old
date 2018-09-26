@@ -25,9 +25,12 @@ svg.map {
   position: fixed;
   top: 0;
   width: 100%;
-  line-height:2.5;
   box-shadow:8px 3px 20px rgba(0,0,0,0.6);
-  opacity:0.9;
+
+}
+
+.sticky > td > ul > li {
+    opacity:0.9;
 }
 
 .image-responsive {
