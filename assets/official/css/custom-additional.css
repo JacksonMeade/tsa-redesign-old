@@ -1464,6 +1464,9 @@ body {
 .section_4 .dropdown .dropdown-menu .dropdown-submenu {
   margin: 0;
 }
+.section_4 .dropdown.open {
+  opacity:1.0;
+}
 .section_4 .dropdown.open > .dropdown-menu {
   display: block;
 }
