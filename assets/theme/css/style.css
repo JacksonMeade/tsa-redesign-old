@@ -159,6 +159,15 @@
                  color: rgb(158, 0, 0) !important;
              }
 
+
+             .activeSpecial .open {
+               color: #0e2c82 !important;
+                 border-bottom: 5px solid #0e2c82;
+             }
+             .activeSpecial .open a {
+                              #0e2c82 !important;
+             }
+
          .listServe {
              color: #163eae;
              text-align: left !important;
