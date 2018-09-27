@@ -29,12 +29,8 @@ svg.map {
 
 }
 
-.activeSpecial .open {
-  color: rgb(158, 0, 0) !important;
-    border-bottom: 5px solid rgb(158, 0, 0);
-    border-bottom-width: 5px;
-    border-bottom-style: solid;
-    border-bottom-color: rgb(158, 0, 0);
+.parallax-div-deep {
+    transform: translateZ(-2px) scale(3);
 }
 
 .image-responsive {
