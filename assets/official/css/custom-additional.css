@@ -29,10 +29,6 @@ svg.map {
 
 }
 
-.sticky > td > ul > li {
-    opacity:0.9;
-}
-
 .image-responsive {
   max-width: 100%;
   max-height:50vh;
