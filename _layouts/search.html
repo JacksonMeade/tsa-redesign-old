@@ -1,10 +1,13 @@
 {% include header.html %}
 
+
+<!-- This is another huge file that needs to be broken down into smaller components -->
 <div id="navDefault">
     <div id="mySidenav" class="sidenav">
 
         <div id="content4-v">
             <div style="position:absolute; right:0; margin-right:3rem; top:0; margin-top:2rem;">
+                <!-- we need to handle all js externally for managability -->
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span class="custom-iconfont customi-close"></span>   RETURN</a>
             </div>
             <hr />
@@ -16,6 +19,7 @@
                         </h2>
                         <h3 class="custom-section-subtitle align-center custom-light custom-fonts-style display-5">
 
+                            <!-- why not put this in a list instead of using <br>? -->
                             <a href="../../Home">Home</a><br /> <a href="index.html">Contact</a><br /> <a href="index.html">Privacy Policy</a>
 
                         </h3>
@@ -35,7 +39,7 @@
                         <div class="section-head text-center space30">
 
                         </div>
-                        <div class="clearfix"></div>
+                        <div class="clearfix"></div> <!-- floats are old school, never use them because you have to do this stuff. use css grid or flexbox -->
                         <div id="bootstrap-toggle" class="toggle-panel accordionStyles tab-content">
                             <div class="card">
                                 <div class="card-header" role="tab" id="headingOne">

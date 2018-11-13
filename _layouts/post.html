@@ -2,12 +2,16 @@
 layout: default
 ---
 
+
+<!-- Need to consider removing random HTML elements like <br> for creating spacing in layout. The class naming is a little vague (.custom-section, .content5) and IDs should be used sparingly (either for main layout elements or for JS). We also need to pull out all of the inline css. This makes it extremely difficult to maintain and build on top of in the future. -->
 <br>
 <br>
 <section class="custom-section content5" id="content5-11" style="padding-bottom:3rem; background-image:url({{ page.reviewImgUrl | absolute_url }}); margin-top:5.75rem;  background-position: 50% 50%; background-repeat: no-repeat; z-index: 0; position: relative; background-size: cover; background-attachment:fixed;">
 
+  <!-- why not apply this with a :before or :after psuedoclass on another element? -->
   <div class="custom-overlay" style="opacity: 0.6; background-color: rgb(24, 45, 103);">
   </div>
+  <!--  -->
 
   <div class="container">
       <div class="media-container-row">
@@ -17,6 +21,8 @@ layout: default
               </h3>
               <p class="align-center" style="color: #c5c5c5">
                   <em> {{ page.blurb }} </em>
+                  <!-- this will be better managed by styling a <span>
+                  instead of <em>-->
               </p>
 
 
@@ -36,7 +42,7 @@ layout: default
               {% if ((page.featuredLinks != null) || (page.featuredFiles != null) %}
               <div class="col-md-4 col-sm-12 mover" style="float:right;  height: auto; margin: 10px; padding: 1rem; background-color: #e5e5e5;">
                 {% if ((page.featuredLinks != null) %}
-                <h3 class="align-center">Related Links</h3><hr/>
+                <h3 class="align-center">Related Links</h3><hr/> <!-- consider applying a border bottom on the h3 instead of an <hr> -->
                   <ul>{% for link in page.featuredLinks %}
                     <a href="{{ page.featuredLinks_Urls[forloop.index] | absolute_url }}" target="_blank"><li class="linkList">{{ link }}</li></a>
                   {% endfor %}</ul>
@@ -49,7 +55,7 @@ layout: default
                 {% endif  %}
               </div>
               {% endif %}
-              <div class="customContent">
+              <div class="customContent"> <!-- need to keep classname structure same throughout i.e. custom-content -->
                 {{ content }}
               </div>
             </div>
