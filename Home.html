@@ -4,6 +4,8 @@ category: "Main"
 title: "Home"
 ---
 
+
+need a lot of cleanup here.
 <section class="carousel slide section_7" style="max-height:74vh; margin-top:5.75rem; margin-bottom:2rem;" data-interval="false" id="slider1-4">
     <div class="full-screen">
         <div class="custom-slider slide carousel" data-pause="true" data-keyboard="false" data-ride="carousel" data-interval="8000">
@@ -161,7 +163,7 @@ title: "Home"
     </div>
 </section>
 
-<section class="custom-fullscreen" style="background:linear-gradient(45deg, #7fd9fc, #6576aa) !important">
+<section class="custom-fullscreen" style="background:linear-gradient(45deg, #7fd9fc, #6576aa) !important"> <!-- never use !important. this is a result of not following the cascade rules of CSS -->
   <!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
   <div class="container justify-content-center align-center">
     <div class="row justify-content-center align-center">
@@ -172,6 +174,9 @@ title: "Home"
     <subtitle style="color:white;" class="display-4 custom-text">Click on a state to access more information on its member delegation and to visit its website</subtitle>
   </div>
 
+
+    <!-- We should generate this content instead of being hardcoded.  -->
+    <!-- We should have one component and loop through all the data -->
     <div class="row justify-content-center align-center">
 
     <div class="stateInfo col-md-3 col-sm-12">
